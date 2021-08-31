@@ -1,0 +1,343 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: "MaFont";
+    src: url("./font/futura_medium_bt.ttf")
+}
+
+body .container     {
+    font-family: "MaFont";
+    position: relative;
+}
+
+.top_site a{
+    top: 20px;
+    color: #F3C53C;
+    font-size: 25px;
+    position: fixed;
+    text-decoration: none;
+    right: 20px;
+    border: solid 1px #F3C53C;
+    border-radius: 25px 5px 16px 33px ;
+    padding: 10px;
+}
+
+.top_site a:hover{
+    color: #04C4D9;
+}
+
+.container{
+    width: 1000px;
+    margin: auto;
+    color: white;
+    text-align: right;
+}
+nav{
+    left: 0;
+    top: 150px;
+    left: -40px;
+    position: fixed;
+    z-index: 100;
+}
+
+nav .btn_link a{
+    color: white;
+    text-decoration: none;
+    
+}
+.btn_link{
+    text-align: right;
+    font-size: 60px;
+    height: 100%;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 0px 30px 30px 0px;
+    box-shadow: 10px 5px 5px rgba(9, 9, 150, .05);
+    
+}
+
+.btn_link:nth-child(1){
+    background-color: #FF7BAC;
+}
+.btn_link:nth-child(2){
+    background-color: #04C4D9;
+}
+.btn_link:nth-child(3){
+    background-color:#049DBF;
+}
+
+.landing{
+    background-color: #F3C53C;
+    height: 100vh;
+}
+
+header .container{
+    width: 30%;
+    margin: auto;
+}
+
+.img_logo{
+    margin-top: 200px;
+    position: absolute;
+}
+
+#apropos{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: linear-gradient(#F3C53C, #FF7BAC);
+}
+
+#apropos .container p{
+    text-align: right;
+}
+
+#apropos .container{
+    color:white;
+    display: flex;
+    justify-content:right;
+}
+
+.formations{
+    width: 50%;
+}
+.professionnel{
+    width: 50%;
+}
+
+.formations h3{
+    text-align: right;
+}
+.professionnel h3{
+    text-align: right;
+}
+.competences{
+    width: 50%;
+}
+.langues{
+    width: 50%;
+}
+
+.competences h3{
+    text-align: right;
+}
+.langues h3{
+    text-align: right;
+}
+
+#apropos .container:last-child{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#carouselExampleCaptions{
+    margin: auto;
+    width: 50%;
+}
+
+#realisations{
+    background: linear-gradient(#FF7BAC,#049DBF );
+}
+.loisir{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.loisir .container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.loisir .container .picto_2{
+    padding-bottom: 20px;
+}
+
+.loisir .container svg{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+#realisations{
+    /* padding-top: 50px; */
+    padding-bottom: 50px;
+}
+
+#realisations h3{
+    padding-bottom: 20px;
+}
+
+#realisations h4{
+    font-size: 18px;
+    text-align: center;
+    font-style: italic;
+}
+
+#realisations a{
+    color: #F3C53C;
+    text-decoration: none;
+}
+
+#realisations a:hover{
+    color: #FF7BAC;
+    text-decoration: none;
+}
+
+#contact{
+    background: linear-gradient(#049DBF, #F3C53C );
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+#contact form{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+form textarea{
+    margin-bottom: 15px;
+    border-radius: 15px;
+    border: none;
+    width: 55%;
+
+}
+
+form .txt_form{
+    width: 55%;
+    padding-top: 10px;
+}
+
+form label{
+    margin-bottom: 15px;
+}
+
+form input{
+    border-radius: 15px;
+    border: none;
+    width: 55%;
+    height: 35px;
+    
+    }
+
+footer{
+    z-index: 10000;
+    width: 100%;
+    position: sticky;
+    background-color: black;
+    bottom: 0;
+    
+}
+
+footer a{
+    color: white;
+}
+footer .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .container .img_footer{
+    display: flex;
+    height: 25px;
+}
+
+.btn_envoyer{
+    width: 55%;
+}
+
+.btn_send{
+    padding: 10px;
+    width: 100px;
+    color: #049DBF;
+    background-color:#F3C53C;
+}
+/*--------------------------------------------------------------------------------------*/
+@media screen and (max-width:1000px) {
+
+    .top_site{
+        display: none;
+    }
+
+    nav{
+        /* left: 0; */
+        top: 50px;
+        left: -40px;
+        position: fixed;
+        z-index: 100;
+    }
+
+    .btn_link{
+        font-size: 15px;
+    } 
+
+    .container{
+        width: 90%;
+        font-size: 11px;
+    }
+
+    header .container{
+        width: 90%;
+        padding-top: 0px;
+    }
+
+    .img_logo{
+        margin-top: 0px;
+    }
+
+    .first_svg{
+        width: 100%;
+    }
+
+    .landing{
+        padding: 0px;
+    }
+    footer .container{
+        flex-direction: column;
+    }
+
+    #carouselExampleCaptions{
+        width: 90%;
+    }
+    form textarea{
+        width: 90%;
+        margin-bottom: 15px;
+        border-radius: 15px;
+        border: none;
+    
+    }
+    
+    #contact form{
+        width: 100%;
+    }
+
+    form label{
+        margin-bottom: 15px;
+    }
+    
+    form input{
+        width: 100%;
+        border-radius: 15px;
+        border: none;
+        
+        }
+    form textarea{
+        width: 100%;
+    }
+
+    #apropos .container{
+        color:white;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .loisir .container .picto_1 .picto_2{
+        margin-top: 30px;
+        margin-left: 30px;
+        width: 50%;
+    }
+    
+}
