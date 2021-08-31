@@ -327,6 +327,10 @@ footer .container .img_footer{
         width: 100%;
     }
 
+    form .txt_form{
+        width: 100%;
+    }
+
     #apropos .container{
         color:white;
         display: flex;
