@@ -75,8 +75,9 @@ nav .btn_link a{
     height: 100vh;
 }
 
-header .container{
-    width: 30%;
+header svg{
+    padding-top: 100px;
+    display: block;
     margin: auto;
 }
 
@@ -237,6 +238,7 @@ footer a{
 footer .container{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 footer .container .img_footer{
@@ -244,6 +246,9 @@ footer .container .img_footer{
     height: 25px;
 }
 
+footer .container p{
+    margin-bottom: 0%;
+}
 .btn_envoyer{
     width: 55%;
 }
