@@ -11,6 +11,7 @@
 body .container     {
     font-family: "MaFont";
     position: relative;
+    overflow-x: hidden;
 }
 
 .top_site a{
@@ -103,6 +104,9 @@ header svg{
     color:white;
     display: flex;
     justify-content:right;
+}
+#apropos h3 {
+color: black;
 }
 
 .formations{
@@ -232,7 +236,7 @@ footer{
     position: sticky;
     background-color: black;
     bottom: 0;
-    
+    padding: 15px;
 }
 
 footer a{
@@ -252,12 +256,10 @@ footer .container .img_footer{
 
 footer .container p{
     margin-bottom: 0%;
-<<<<<<< HEAD
-=======
 }
 .btn_envoyer{
     width: 55%;
->>>>>>> 83a1ae5309b951f37d825af03ece4b05a976a79b
+
 }
 
 .btn_envoyer{
@@ -296,15 +298,12 @@ footer .container p{
         padding-top: 0px;
     }
 
-    .img_logo{
-        margin-top: 0px;
-    }
-
     .first_svg{
         width: 100%;
     }
 
     .landing{
+        height: 50vh;
         padding: 0px;
     }
 
@@ -318,9 +317,9 @@ footer .container p{
 
    #apropos .container h3{
         font-size: 13px;
-        color:#FF7BAC
+        color:black;
         font-style: italic;
-        font-
+       
    }
     #apropos .container{
         color:white;
