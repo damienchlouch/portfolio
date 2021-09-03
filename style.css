@@ -14,19 +14,27 @@ body .container     {
 }
 
 .top_site a{
+    padding: 50px;
+    right: 0;
+    text-decoration: none;
     top: 20px;
     color: #F3C53C;
     font-size: 25px;
     position: fixed;
-    text-decoration: none;
-    right: 20px;
-    border: solid 1px #F3C53C;
-    border-radius: 25px 5px 16px 33px ;
-    padding: 10px;
-}
+    background: -webkit-linear-gradient(0.25turn,#F3C53C,#04C4D9);
+    -webkit-background-clip: text;
+    animation-name: gradient_txt;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
 
-.top_site a:hover{
-    color: #04C4D9;
+@keyframes gradient_txt{
+    from {
+        -webkit-filter: hue-rotate(0deg);
+    }
+      to {
+        -webkit-filter: hue-rotate(-360deg);
+    }
 }
 
 .container{
@@ -75,16 +83,12 @@ nav .btn_link a{
     height: 100vh;
 }
 
-header .container{
-    width: 30%;
+header svg{
+    padding-top: 100px;
+    display: block;
     margin: auto;
+    /* width: 50%; */
 }
-
-.img_logo{
-    margin-top: 200px;
-    position: absolute;
-}
-
 #apropos{
     padding-top: 50px;
     padding-bottom: 50px;
@@ -192,35 +196,35 @@ header .container{
     padding-bottom: 50px;
 }
 
-#contact form{
+#contact .container{
     display: flex;
     flex-direction: column;
-    align-items:center;
+    align-items: center;
 }
-form textarea{
-    margin-bottom: 15px;
+
+#contact .container h3{
+    align-self: flex-end;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+form .field_one{
+    width: 600px;
+    border: solid 0px;
     border-radius: 15px;
-    border: none;
-    width: 55%;
-
 }
 
-form .txt_form{
-    width: 55%;
-    padding-top: 10px;
+.btn_send{
+    margin-top: 5px;
+    border: solid 0px;
+    border-radius: 5px;
+    padding: 5px;
 }
-
-form label{
-    margin-bottom: 15px;
-}
-
-form input{
-    border-radius: 15px;
-    border: none;
-    width: 55%;
-    height: 35px;
-    
-    }
 
 footer{
     z-index: 10000;
@@ -234,9 +238,11 @@ footer{
 footer a{
     color: white;
 }
+
 footer .container{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 footer .container .img_footer{
@@ -244,13 +250,14 @@ footer .container .img_footer{
     height: 25px;
 }
 
-.btn_envoyer{
-    width: 55%;
+footer .container p{
+    margin-bottom: 0%;
 }
 
-.btn_send{
-    padding: 10px;
-    width: 100px;
+.btn_envoyer{
+    width: 150px;
+}
+.btn_send{  
     color: #049DBF;
     background-color:#F3C53C;
 }
@@ -273,10 +280,10 @@ footer .container .img_footer{
         font-size: 15px;
     } 
 
-    .container{
+    #apropos .container{
         width: 90%;
         font-size: 11px;
-    }
+    } 
 
     header .container{
         width: 90%;
@@ -294,6 +301,7 @@ footer .container .img_footer{
     .landing{
         padding: 0px;
     }
+
     footer .container{
         flex-direction: column;
     }
@@ -301,36 +309,13 @@ footer .container .img_footer{
     #carouselExampleCaptions{
         width: 90%;
     }
-    form textarea{
-        width: 90%;
-        margin-bottom: 15px;
-        border-radius: 15px;
-        border: none;
-    
-    }
-    
-    #contact form{
-        width: 100%;
-    }
 
-    form label{
-        margin-bottom: 15px;
-    }
-    
-    form input{
-        width: 100%;
-        border-radius: 15px;
-        border: none;
-        
-        }
-    form textarea{
-        width: 100%;
-    }
-
-    form .txt_form{
-        width: 100%;
-    }
-
+   #apropos .container h3{
+        font-size: 13px;
+        color:#FF7BAC
+        font-style: italic;
+        font-
+   }
     #apropos .container{
         color:white;
         display: flex;
@@ -344,4 +329,7 @@ footer .container .img_footer{
         width: 50%;
     }
     
+    form .field_one{
+        width: 300px;
+    }
 }
